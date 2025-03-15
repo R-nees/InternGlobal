@@ -17,6 +17,20 @@
         </div>
     </header>
 
+    <section class="stats">
+        <div class="stat-item">
+            <span class="stat-number" id="interns-count">0</span>
+            <p>Interns Registered</p>
+        </div>
+        <div class="stat-item">
+            <span class="stat-number" id="companies-count">0</span>
+            <p>Companies Hiring</p>
+        </div>
+        <div class="stat-item">
+            <span class="stat-number" id="jobs-count">0</span>
+            <p>Job Postings</p>
+        </div>
+    </section>
 
     <section class="about">
         <h2>Why Companies Choose InternGlobal</h2>
@@ -91,5 +105,27 @@
     <footer>
         <p>&copy; 2025 InternGlobal. All rights reserved.</p>
     </footer>
+
+    <script>
+        function animateCount(id, target) {
+            let count = 0;
+            const speed = Math.ceil(target / 100);
+            const interval = setInterval(() => {
+                count += speed;
+                if (count >= target) {
+                    count = target;
+                    clearInterval(interval);
+                }
+                document.getElementById(id).innerText = count;
+            }, 30);
+        }
+    
+        window.onload = function() {
+            animateCount("interns-count", 5000);
+            animateCount("companies-count", 1200);
+            animateCount("jobs-count", 300);
+        };
+    </script>
+
 </body>
 </html>
