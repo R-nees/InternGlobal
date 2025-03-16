@@ -17,6 +17,17 @@ p {
     line-height: 1.6;
 }
 
+.logo {
+    font-size: 32px;
+    font-weight: bold;
+    background: linear-gradient(45deg, #32CD32, #FFD700);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+}
+
 
 .hero {
     background: url('images\ \(1\).jpeg') no-repeat center center/cover;
@@ -87,7 +98,7 @@ p {
     font-weight: bold;
     color: #ffffff;
     padding: 20px;
-    background: #333;
+    background: linear-gradient(45deg, #32CD32, #FFD700);
     border-radius: 10px;
     width: 200px;
     text-align: center;
@@ -106,7 +117,7 @@ p {
 }
 
 .about li {
-    background: #135e3d;
+    background: linear-gradient(45deg, #006400, #FFD700);
     padding: 15px;
     margin: 10px 0;
     border-radius: 8px;
@@ -117,7 +128,7 @@ p {
 
 .how-it-works {
     padding: 50px 20px;
-    background-color: #222;
+    background: linear-gradient(45deg, #006400, #FFD700);
 }
 
 .steps {
@@ -170,7 +181,7 @@ p {
 
 .cta {
     padding: 50px 20px;
-    background-color: #222;
+    background: linear-gradient(45deg, #006400, #FFD700);
 }
 
 .guarantee {
@@ -181,7 +192,7 @@ p {
 
 footer {
     padding: 20px;
-    background-color: #000;
+    background: #222;
 }
 
 @media (max-width: 1024px) {
